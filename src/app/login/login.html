@@ -1,0 +1,50 @@
+<main class="login-page">
+
+  <section class="login-panel">
+    <div class="login-card">
+      <header class="login-header">
+        <img src="images/login/logo.png" alt="AutoManager" class="login-logo">
+        <p>FAÇA LOGIN PARA CONTINUAR</p>
+      </header>
+
+      <form class="login-form">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <div class="input-wrapper">
+            <span class="input-icon material-symbols-outlined">mail</span>
+            <input id="email" type="email" placeholder="Digite seu e-mail">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="password">Senha</label>
+          <div class="input-wrapper">
+            <span class="input-icon material-symbols-outlined">lock</span>
+            <input id="password" [type]="passwordVisible ? 'text' : 'password'" placeholder="Digite sua senha">
+            <button type="button" class="toggle-password" (click)="togglePassword()">
+              <span class="material-symbols-outlined">{{ passwordVisible ? 'visibility_off' : 'visibility' }}</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="login-options">
+          <label class="remember">
+            <input type="checkbox">
+            <span>Lembrar meu acesso</span>
+          </label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span class="material-symbols-outlined">login</span>
+          ENTRAR
+        </button>
+      </form>
+
+      <footer class="login-footer">© 2026 AutoManager. Todos os direitos reservados.</footer>
+    </div>
+  </section>
+
+  <section class="brand-panel"></section>
+
+</main>
