@@ -36,7 +36,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 28px 40px;
+    padding: 8px 50px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
@@ -47,14 +47,14 @@
 }
 
 .login-logo {
-    width: min(842px, 68vh);
-    margin: 0 auto 14px;
+    width: min(842px, 69vh);
+    margin: 0 auto 60px;
     display: block;
 }
 
 .login-header p {
     margin-top: 6px;
-    font-size: 11px;
+    font-size: 18px;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: var(--text);
@@ -67,7 +67,7 @@
 
 .field label {
     display: block;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
     color: var(--text);
